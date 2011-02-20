@@ -4,7 +4,7 @@ Donate link: http://fnse.de/Spenden/
 Tags: plugin, filter, group
 Requires at least: 2.8
 Tested up to: 3.0.5
-Stable tag: 1.1
+Stable tag: 1.1b
 
 Plugins group and comment.
 
@@ -53,6 +53,9 @@ The integrated translation of the blog will be used.
 1. Page in Backend (WordPress 3.0.5)
 
 == Changelog ==
+
+= v1.1b (21/02/2011) =
+* small bugfix
 
 = v1.1 (20/02/2011) =
 + security with current_user_can()
