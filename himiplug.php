@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: himi's Plugin Organizer
- * Plugin URI:  http://geheimniswelten.de/himiplug
+ * Plugin URI:  http://geheimniswelten.de/himiPlug
  * Description: details link and plugin filter for admin>plugins
  *              details only works with plugins that are available on http://wordpress.org/extend/plugins/
  * Author:      himitsu
- * Version:     1.1b
+ * Version:     1.1
  * Author URI:  http://geheimniswelten.de
  *
  * Saved Data:  database > {wp_}options >
@@ -295,8 +295,8 @@ function himi_PluginOptions_add_options_page() {
     $options['filter_enabled'] = (bool)$_POST['himiPluginFilter_enabled'];
     $options['comment_enabled'] = (bool)$_POST['himiPluginComment_enabled'];
     $options['comment_new_line'] = (bool)$_POST['himiPluginComment_new_line'];
-    $options['comment_text_width'] = ($i = intval($_POST['himiPluginComment_text_width'])
-      && ($i > 15) && ($i < 99)) ? $i : 50;
+    $i = intval($_POST['himiPluginComment_text_width']);
+    $options['comment_text_width'] = (($i == 0) ? 50 : min(max($i, 10), 99));
     update_option('himiPlugin_options', $options);
   }
   ?>
