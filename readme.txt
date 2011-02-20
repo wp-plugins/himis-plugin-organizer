@@ -50,17 +50,17 @@ The integrated translation of the blog will be used.
 -
   
 == Screenshots ==
-Page in Backend (WordPress 3.0.5)
+1. Page in Backend (WordPress 3.0.5)
 
 == Changelog ==
 
 = v1.1 (20/02/2011) =
-+ security with current_user_can()
-+ options page
-+ plugin comments
+* + security with current_user_can()
+* + options page
+* + plugin comments
 
 = v1.0 (17/02/2011) =
-+ base idea
+* + base idea
 
 == Upgrade Notice ==
   
