@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: himi's Plugin Organizer
- * Plugin URI:  http://geheimniswelten.de/himiPlug
+ * Plugin URI:  http://geheimniswelten.de/himiplug
  * Description: details link and plugin filter for admin>plugins
  *              details only works with plugins that are available on http://wordpress.org/extend/plugins/
  * Author:      himitsu
- * Version:     1.1
+ * Version:     1.1b
  * Author URI:  http://geheimniswelten.de
  *
  * Saved Data:  database > {wp_}options >
@@ -317,7 +317,7 @@ function himi_PluginOptions_add_options_page() {
       <input type="checkbox" name="himiPluginComment_enabled" value="yes" <?php
         if ($options['comment_enabled']) echo ' checked="checked"'; ?> /> enabled<br /><br /><br />
       <input type="checkbox" name="himiPluginComment_new_line" value="yes" <?php
-        if (!$options['comment_new_line']) echo ' checked="checked"'; ?> /> comments on new line<br /><br />
+        if ($options['comment_new_line']) echo ' checked="checked"'; ?> /> comments on new line<br /><br />
       width of the input field: <input type="text" name="himiPluginComment_text_width" value="<?php
         echo $options['comment_text_width']; ?>" size="2" maxlength="2"><br /><br />
       <br />
